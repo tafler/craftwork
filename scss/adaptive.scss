@@ -1,0 +1,185 @@
+@import "style.scss";
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+    .container {
+        width: 970px;        
+    }
+
+    }
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    
+    .subscribe-form form{
+        width: 90%;
+    }
+    .container {
+        width: 780px;
+        margin-bottom: 120px;
+    }
+    .welcome {
+        &__phone {
+            display: none;            
+        }
+        min-height: auto;
+        overflow: hidden;
+        &__text {
+            h1 {
+                font-size: 40px;
+            }
+            width: 80%;
+        }
+    }
+    .header{
+        height: 100px;
+        &__nav {
+        width: auto;
+            a{
+                display: none;
+                &:first-of-type{
+                    display: block;
+                }
+            }
+        }
+        &__logo{
+            align-self: flex-end;
+            img{
+            width:200px;
+            margin: 20px 50px;;
+            }
+        }
+        &__right {
+            display: none;            
+        }
+        .container{
+            justify-content: space-between;
+        }
+    }
+    .modal__leftmenu{
+        width: 40vw;
+    }
+    .slogans {
+        .container {
+        flex-wrap: wrap;
+        div:first-child{
+            margin-right: 0;
+        }
+    }
+        &__block{
+            padding: 0 10px;
+            margin: 0 auto;
+            width: 70vw;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+    .protected{
+        .container{
+            flex-wrap: wrap-reverse;
+        }
+        &__phone{
+
+            margin: 55px auto;
+            img{
+            animation: none;
+            }
+        
+        }
+        &__textblock{
+            width: 70vw;     
+        }
+
+    }
+    .location{
+        .container{
+            flex-wrap: wrap;
+        }
+        &__textblock{
+            width: 70vw;
+            margin-bottom: 40px;
+        }
+        &__mapblock{
+            margin: 0;
+        }
+
+    }
+    .interfaces{
+        &__phone-slider img{
+            padding: 20px 10px;
+        }
+    }
+
+    .comments{
+        .container{
+            width: 500px;
+            
+            .slick-arrow{
+                display: none!important;
+            }
+            .slick-dots{
+                width: auto;
+            }
+      }
+    }
+
+
+
+
+    .yourplan{
+        .container{
+            flex-wrap: wrap;
+        }
+        &__comerce{
+            width: 70vw;
+            margin: 50px auto;
+        }
+        &__plan{
+            margin-top:  100px;
+            width: 90vw;
+        }
+    }
+
+
+    .footer{
+        &__socials{
+            width: 300px;
+        }
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .container{
+        width: 100%;
+    }
+    .footer{
+        &__socials{
+            width: 500px;
+            ul{
+                width: 250px;
+            }
+            padding-bottom: 50px;
+        }
+        &__nav{
+
+            flex-grow: 1;
+            &__item{
+                padding-top: 40px;
+                min-width: 150px;
+            }   
+        }
+
+
+        &__madeby{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+    
